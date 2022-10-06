@@ -1,10 +1,11 @@
 import express from 'express'
+import config from './configs/config.js'
 import _dotenv from './configs/dotenv.js'
 import info_router from './routes/info-route.js'
 import random_router from './routes/random-route.js'
 import user_router from './routes/users-route.js'
 
-const PORT = process.env.PORT || 8080
+const PORT = config.PORT || process.env.PORT
 
 const app = express()
 

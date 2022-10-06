@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "nodemon ./src/app.js"
+		"dev": "nodemon ./src/app.js",
+		"minimist-test": "nodemon ./src/app.js -p 8000"
 	},
 	"keywords": [],
 	"author": "",
@@ -13,11 +14,11 @@
 	"dependencies": {
 		"dotenv": "^16.0.3",
 		"express": "^4.18.1",
-		"mongoose": "^6.6.5",
-		"yargs": "^17.6.0"
+		"mongoose": "^6.6.5"
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^7.5.0",
+		"minimist": "^1.2.6",
 		"nodemon": "^2.0.20"
 	}
 }
